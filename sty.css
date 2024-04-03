@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif; 
+    background: linear-gradient(to right, #ffff71 ,rgb(237, 188, 196));
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    height:100%;
+    margin-top: -50px;
+
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding:10px;
+    display: grid;
+    gap:20px;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.b {
+    color: black;
+    text-align: left;
+    margin-right: 10px;
+    font-size: large;
+}
+
+.cover-image {
+    width: 100%;
+    grid-column-start: vertical;
+    grid-column-end: vertical;
+    grid-row: span 2;
+    align-items: stretch;
+    justify-items: center;
+    margin-top:100px;
+ 
+    
+}
+
+.cover-image img {
+    width: 180%;
+    height: 80%;
+    object-fit: cover;
+    display: block;
+   
+}
+
+.vertical-images {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    margin-bottom: 39px;
+   
+    
+}
+
+.vertical-image img {
+    width: 200px;
+    height: 210px;
+    display: block;
+    object-fit: cover;
+   
+ 
+}
+
+.last {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 20px 100px;
+    text-align: left;
+    margin-bottom: -100px;
+    margin-left: -350px;
+    
+    
+    
+}
+
+.s2 {
+    width: 400px;
+    height: 200px;
+    border: 2px;
+    padding: 20px;
+    background-color: rgb(238, 41, 19);
+
+}
+.text-pink-700{
+    margin-bottom: -10px;
+}
+
+
+.s2 h4 {
+   
+    
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.s2 h1 {
+    
+    letter-spacing: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: xx-large;
+    
+}
+
+
+.click {
+    color: black;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    background-color: rgb(238, 41, 19);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.click:hover {
+    background-color: rgb(0, 243, 130);
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .cover-image img,
+    .vertical-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .s2 {
+        padding: 20px;
+    }
+}
